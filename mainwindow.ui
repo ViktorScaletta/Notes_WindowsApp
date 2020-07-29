@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Заметки</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>21</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Notes&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListWidget" name="listWidget"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="defaultUp">
+    <bool>false</bool>
+   </property>
+   <widget class="QMenu" name="menuefrrg">
+    <property name="title">
+     <string>Options</string>
+    </property>
+    <addaction name="newNote"/>
+    <addaction name="separator"/>
+    <addaction name="updateButton"/>
+    <addaction name="separator"/>
+    <addaction name="actionthrhrt"/>
+    <addaction name="separator"/>
+    <addaction name="exitButton"/>
+   </widget>
+   <addaction name="menuefrrg"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="newNote">
+   <property name="text">
+    <string>New note</string>
+   </property>
+  </action>
+  <action name="actionthrhrt">
+   <property name="text">
+    <string>Sync</string>
+   </property>
+  </action>
+  <action name="exitButton">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="updateButton">
+   <property name="text">
+    <string>Update note list</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
